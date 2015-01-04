@@ -1,4 +1,4 @@
-package net.predictblty;
+package net.predictblty.service;
 
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;

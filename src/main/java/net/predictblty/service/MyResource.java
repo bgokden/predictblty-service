@@ -1,4 +1,4 @@
-package net.predictblty;
+package net.predictblty.service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

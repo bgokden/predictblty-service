@@ -1,4 +1,4 @@
-package net.predictblty.model;
+package net.predictblty.service.model;
 
 import java.util.List;
 import java.util.Map;

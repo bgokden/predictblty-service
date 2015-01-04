@@ -1,6 +1,6 @@
-package net.predictblty;
+package net.predictblty.service;
 
-import net.predictblty.model.Query;
+import net.predictblty.service.model.Query;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
