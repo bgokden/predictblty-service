@@ -40,7 +40,7 @@
                 </hz:join>
             </hz:network>
 
-            <hz:map name="user">
+            <hz:map name="*">
                 <hz:map-store enabled="true" implementation="mongomapstore"
                               write-delay-seconds="0">
                 </hz:map-store>
