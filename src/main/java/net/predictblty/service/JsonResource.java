@@ -18,11 +18,19 @@ public class JsonResource {
 
     private @Autowired HazelcastInstance hazelcastInstance;
 
-    @GET
+    @POST @Path("{domain}/lookup")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Query getIt() {
+    public Query lookup(@PathParam("domain") String domain, Query query) {
         Query q = new Query();
         q.setState("Got it!");
+        List<Map<String, Object>> elemets = query.getElements();
+        IMap<String, Map<String, Object>>  map = hazelcastInstance.getMap(domain+"."+query.getCollection());
+        for (int i = 0; i < elemets.size(); i++) {
+            Map<String, Object> element= map.get(String.valueOf(elemets.get(i).get(query.getIdField())));
+            elemets.set(i, element);
+        }
+        q.setElements(elemets);
         return q;
     }
 
