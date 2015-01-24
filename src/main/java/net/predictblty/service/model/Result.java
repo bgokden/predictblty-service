@@ -2,7 +2,6 @@ package net.predictblty.service.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.hazelcast.machinelearning.mlcommon.Classification;
 import net.predictblty.machinelearning.mlcommon.Classification;
 
 import java.util.Collection;

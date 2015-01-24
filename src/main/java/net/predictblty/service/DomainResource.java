@@ -2,8 +2,6 @@ package net.predictblty.service;
 
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.IMap;
-import net.predictblty.machinelearning.MLAlgorithm.MLAlgorithm;
-import net.predictblty.machinelearning.MLAlgorithm.MLAlgorithmImpl.DistanceBasedClassificationAlgorithm;
 import net.predictblty.machinelearning.mlalgorithm.MLAlgorithm;
 import net.predictblty.machinelearning.mlalgorithm.mlalgorithmimpl.UserBasedCollaborativeFilteringRecommendationAlgorithm;
 import net.predictblty.machinelearning.mlcommon.Classification;
