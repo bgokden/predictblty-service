@@ -11,7 +11,7 @@ public class Application extends ResourceConfig {
      * Register JAX-RS application components.
      */
     public Application () {
-        register(JsonResource.class);
+        register(DomainResource.class);
         register(MyResource.class);
         register(JacksonFeature.class);
     }

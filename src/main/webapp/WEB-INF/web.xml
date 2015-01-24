@@ -26,6 +26,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>/r/*</url-pattern>
+        <url-pattern>/v1/*</url-pattern>
     </servlet-mapping>
 </web-app>

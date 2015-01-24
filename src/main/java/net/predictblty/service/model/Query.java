@@ -3,6 +3,7 @@ package net.predictblty.service.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class Query {
     private String idField;
     private String collection;
     private Map<String, Object> options;
-    private List<Map<String, Object>> elements;
+    private List<Map<String, Serializable>> elements;
 
     public String getState() {
         return state;
@@ -34,11 +35,11 @@ public class Query {
         this.options = options;
     }
 
-    public List<Map<String, Object>> getElements() {
+    public List<Map<String, Serializable>> getElements() {
         return elements;
     }
 
-    public void setElements(List<Map<String, Object>> elements) {
+    public void setElements(List<Map<String, Serializable>> elements) {
         this.elements = elements;
     }
 
